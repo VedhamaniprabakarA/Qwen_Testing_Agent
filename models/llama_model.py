@@ -1,5 +1,6 @@
 from langchain_ollama import ChatOllama
 
+
 class LlamaModel:
 
     def __init__(self):
