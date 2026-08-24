@@ -1,4 +1,5 @@
 from models.llama_model import LlamaModel
+import re
 
 
 class WebTestGenerator:
@@ -7,11 +8,14 @@ class WebTestGenerator:
 
         self.model = LlamaModel()
 
-    # ==========================================================
-    # FORMAT ELEMENTS FOR QWEN
-    # ==========================================================
+    # ======================================================
+    # FORMAT ELEMENTS
+    # ======================================================
 
-    def format_elements(self, page_data):
+    def format_elements(
+        self,
+        page_data
+    ):
 
         output = []
 
@@ -20,33 +24,78 @@ class WebTestGenerator:
             []
         ):
 
-            # Ignore forms for normal UI generation
-            if element.get("tag") == "form":
+            # --------------------------------------------------
+            # Ignore forms
+            # --------------------------------------------------
+
+            if element.get(
+                "tag"
+            ) == "form":
+
                 continue
 
-            # Ignore hidden inputs
+            # --------------------------------------------------
+            # Ignore hidden elements
+            # --------------------------------------------------
+
             if (
-                element.get("type") == "hidden"
-                or element.get("visible") is False
+                element.get(
+                    "type"
+                ) == "hidden"
+                or
+                element.get(
+                    "visible"
+                ) is False
             ):
+
                 continue
 
             output.append(
                 {
-                    "index": element.get("index"),
-                    "tag": element.get("tag"),
-                    "type": element.get("type"),
-                    "name": element.get("name"),
+                    "index": element.get(
+                        "index"
+                    ),
+
+                    "tag": element.get(
+                        "tag"
+                    ),
+
+                    "type": element.get(
+                        "type"
+                    ),
+
+                    "name": element.get(
+                        "name"
+                    ),
+
                     "placeholder": element.get(
                         "placeholder"
                     ),
-                    "text": element.get("text"),
-                    "href": element.get("href"),
-                    "role": element.get("role"),
+
+                    "aria_label": element.get(
+                        "aria_label"
+                    ),
+
+                    "text": element.get(
+                        "text"
+                    ),
+
+                    "href": element.get(
+                        "href"
+                    ),
+
+                    "role": element.get(
+                        "role"
+                    ),
+
                     "css_selector": element.get(
                         "css_selector"
                     ),
-                    "xpath": element.get("xpath"),
+
+                    "xpath": element.get(
+                        "xpath"
+                    ),
+
                     "playwright_locator": element.get(
                         "playwright_locator"
                     )
@@ -55,76 +104,143 @@ class WebTestGenerator:
 
         return output
 
-    # ==========================================================
+    # ======================================================
     # GENERATE TEST CASES
-    # ==========================================================
+    # ======================================================
 
     def generate_test_cases(
         self,
+        user_prompt,
         url,
-        page_data
+        page_data,
+        credentials
     ):
 
-        elements = self.format_elements(
-            page_data
+        elements = (
+            self.format_elements(
+                page_data
+            )
         )
+
+        username = (
+            credentials.get(
+                "username"
+            )
+        )
+
+        password = (
+            credentials.get(
+                "password"
+            )
+        )
+
+        # --------------------------------------------------
+        # Credential information
+        # --------------------------------------------------
+
+        credential_info = ""
+
+        if username:
+
+            credential_info += (
+                f"\nUsername: {username}"
+            )
+
+        if password:
+
+            credential_info += (
+                f"\nPassword: {password}"
+            )
 
         prompt = f"""
 You are a professional QA test engineer.
 
-TARGET PAGE:
+==================================================
+USER TEST REQUEST
+==================================================
+
+{user_prompt}
+
+==================================================
+TARGET PAGE
+==================================================
+
 {url}
 
-PAGE TITLE:
+==================================================
+PAGE TITLE
+==================================================
+
 {page_data.get("title")}
 
-ACTUAL UI ELEMENTS DISCOVERED BY PLAYWRIGHT:
+==================================================
+TEST CREDENTIALS
+==================================================
+
+{credential_info}
+
+These credentials were explicitly supplied by
+the user for this test execution.
+
+Use them exactly when creating the valid-login
+test case.
+
+Do not invent different credentials.
+
+Do not store credentials in the page snapshot.
+
+==================================================
+ACTUAL UI ELEMENTS DISCOVERED BY PLAYWRIGHT
+==================================================
+
 {elements}
 
-Your task is to generate functional test cases.
+==================================================
+IMPORTANT RULES
+==================================================
 
-IMPORTANT:
+The discovered elements above are the source
+of truth for the webpage.
 
-Only use UI elements that appear in the
-ACTUAL UI ELEMENTS list.
+Only use UI elements that actually appear
+in the discovered element list.
 
 Do NOT invent:
 
+- fields
+- buttons
+- links
+- URLs
+- selectors
 - error messages
 - dashboard
-- profile page
-- settings page
+- profile
+- settings
 - forgot password
-- password change
-- additional fields
-- additional buttons
-- additional links
-- additional URLs
-- additional selectors
+- password reset
+- account lockout
+- additional pages
 
-Do not assume functionality that is not visible
-from the discovered page.
+Do not assume functionality that was not
+observed from the page.
 
-For this page, generate realistic test scenarios
-based ONLY on the discovered elements.
+For the login test, use the credentials supplied
+by the user.
 
-For a login form, cover:
+If the user supplied credentials, include a
+valid-login test case.
 
-1. Valid login
-2. Invalid login
-3. Empty username
-4. Empty password
-5. Empty username and password
-6. Login button behavior
+You may include negative login scenarios only
+when appropriate.
 
-Only generate link navigation tests for links that
-actually appear in the discovered elements.
+Do not invent specific error messages.
 
-Do not invent expected error messages.
+Do not claim that a particular post-login page
+exists unless it was actually observed.
 
-Return plain text test cases.
-
-Use this format:
+==================================================
+OUTPUT FORMAT
+==================================================
 
 TEST CASE ID:
 TEST CASE NAME:
@@ -133,51 +249,110 @@ STEPS:
 TEST DATA:
 EXPECTED RESULT:
 
-Do not include Python code.
+Return plain text only.
+
+Do not generate Python code.
+
+Do not add explanations before or after the
+test cases.
 """
 
         return self.model.ask(
             prompt
         )
 
-    # ==========================================================
+    # ======================================================
     # GENERATE PLAYWRIGHT
-    # ==========================================================
+    # ======================================================
 
     def generate_playwright(
         self,
+        user_prompt,
         url,
         page_data,
-        test_cases
+        test_cases,
+        credentials
     ):
 
-        elements = self.format_elements(
-            page_data
+        elements = (
+            self.format_elements(
+                page_data
+            )
+        )
+
+        username = (
+            credentials.get(
+                "username"
+            )
+        )
+
+        password = (
+            credentials.get(
+                "password"
+            )
         )
 
         prompt = f"""
-You are a Python Playwright automation engineer.
+You are a senior Python Playwright automation engineer.
 
-Generate Playwright automation for the REAL page below.
+Your ONLY task is to generate an executable Python
+Playwright automation script.
 
-REAL TARGET URL:
+==================================================
+USER TEST REQUEST
+==================================================
+
+{user_prompt}
+
+==================================================
+REAL TARGET URL
+==================================================
 
 {url}
 
-REAL DISCOVERED ELEMENTS:
+==================================================
+USER-PROVIDED TEST CREDENTIALS
+==================================================
+
+Username:
+{username}
+
+Password:
+{password}
+
+These credentials were explicitly provided by
+the user for this test execution.
+
+Use them exactly.
+
+Do not invent or modify the credentials.
+
+Do not print the password.
+
+==================================================
+STORED PAGE SNAPSHOT
+==================================================
+
+PAGE TITLE:
+
+{page_data.get("title")}
+
+ACTUAL DISCOVERED ELEMENTS:
 
 {elements}
 
-TEST CASES:
+==================================================
+GENERATED TEST CASES
+==================================================
 
 {test_cases}
 
 ==================================================
-ABSOLUTE RULES
+CRITICAL RULES
 ==================================================
 
 RULE 1:
-The browser MUST navigate to exactly:
+Navigate to EXACTLY this URL:
 
 {url}
 
@@ -185,57 +360,170 @@ RULE 2:
 Never use example.com.
 
 RULE 3:
-Never use another URL.
+Never invent another URL.
 
 RULE 4:
-Never invent a selector.
+Never invent selectors.
 
 RULE 5:
-Only use selectors from the discovered elements.
+Use the actual Playwright locators supplied
+by the stored page snapshot.
 
 RULE 6:
-Use the exact Playwright locator supplied
-by the discovered element whenever possible.
+A Playwright locator is a PYTHON EXPRESSION.
+
+It is NOT a CSS selector string.
+
+For example, if the stored page says:
+
+page.get_by_placeholder("Username")
+
+then the correct code is:
+
+page.get_by_placeholder("Username").fill("{username}")
+
+NOT:
+
+page.fill(
+    'page.get_by_placeholder("Username")',
+    "{username}"
+)
 
 RULE 7:
-For username use the discovered username locator.
+For the password field, if the stored page says:
+
+page.get_by_placeholder("Password")
+
+generate:
+
+page.get_by_placeholder("Password").fill("{password}")
+
+NOT:
+
+page.fill(
+    'page.get_by_placeholder("Password")',
+    "{password}"
+)
 
 RULE 8:
-For password use the discovered password locator.
+If the stored page says:
+
+page.get_by_role("button", name="Login")
+
+generate:
+
+page.get_by_role(
+    "button",
+    name="Login"
+).click()
+
+NOT:
+
+page.click(
+    'page.get_by_role("button", name="Login")'
+)
 
 RULE 9:
-For Login use the discovered Login button locator.
+Use the username exactly:
+
+{username}
 
 RULE 10:
-Do not invent:
+Use the password exactly:
 
-profile
-settings
-dashboard
-Google
-Facebook
-Twitter
-LinkedIn
-new_password
-error-message
-
-unless the corresponding element exists
-in the discovered element list.
+{password}
 
 RULE 11:
-Do not create fake test cases.
+Do not hard-code different credentials.
 
 RULE 12:
-Do not create generic Playwright examples.
+Do not invent:
+
+- profile
+- settings
+- dashboard
+- forgot password
+- password reset
+- new password
+- account lockout
+- error messages
+
+unless they actually exist in the stored page
+specification.
 
 RULE 13:
-Do not use example.com.
+Do not generate generic examples.
 
 RULE 14:
-Do not explain the code.
+Do not use Selenium.
 
 RULE 15:
-Return ONLY Python code.
+Use Python Playwright sync API.
+
+RULE 16:
+Launch Chromium with:
+
+headless=False
+
+RULE 17:
+Create a new browser page.
+
+RULE 18:
+Navigate to the exact target URL.
+
+RULE 19:
+Fill the actual username field.
+
+RULE 20:
+Fill the actual password field.
+
+RULE 21:
+Click the actual Login button.
+
+RULE 22:
+Wait for the login operation to complete.
+
+RULE 23:
+Print the current URL after login.
+
+RULE 24:
+Print the page title after login.
+
+RULE 25:
+Never print the password.
+
+RULE 26:
+Close the browser.
+
+==================================================
+VERY IMPORTANT OUTPUT RULE
+==================================================
+
+RETURN ONLY PYTHON CODE.
+
+The response MUST begin with:
+
+from playwright.sync_api import sync_playwright
+
+The response MUST NOT contain:
+
+- explanations
+- "Here is the code"
+- "Here's the solution"
+- "Key points"
+- summaries
+- markdown
+- ```python
+- ```
+- text before the Python program
+- text after the Python program
+
+The response will be saved directly to a .py
+file and executed by Python.
+
+Therefore it MUST be valid Python syntax.
+
+The response MUST end with executable Python code.
 
 ==================================================
 EXPECTED STRUCTURE
@@ -255,11 +543,20 @@ with sync_playwright() as p:
         "{url}"
     )
 
-    # actual discovered elements
+    # actual username locator
+
+    # actual password locator
+
+    # actual login locator
+
+    # wait for result
+
+    print(page.url)
+    print(page.title())
 
     browser.close()
 
-Generate the final executable Python script now.
+Generate ONLY the executable Python program.
 """
 
         response = self.model.ask(
@@ -270,9 +567,9 @@ Generate the final executable Python script now.
             response
         )
 
-    # ==========================================================
-    # CLEAN QWEN MARKDOWN
-    # ==========================================================
+    # ======================================================
+    # CLEAN QWEN RESPONSE
+    # ======================================================
 
     def clean_code(
         self,
@@ -280,22 +577,233 @@ Generate the final executable Python script now.
     ):
 
         if not code:
+
             return ""
 
         code = code.strip()
 
-        if "```python" in code:
+        # ==================================================
+        # REMOVE MARKDOWN FENCES
+        # ==================================================
 
-            code = code.replace(
-                "```python",
-                ""
+        code = code.replace(
+            "```python",
+            ""
+        )
+
+        code = code.replace(
+            "```py",
+            ""
+        )
+
+        code = code.replace(
+            "```",
+            ""
+        )
+
+        code = code.strip()
+
+        # ==================================================
+        # FIND PYTHON START
+        # ==================================================
+
+        markers = [
+            "from playwright.sync_api import sync_playwright",
+            "import playwright"
+        ]
+
+        positions = []
+
+        for marker in markers:
+
+            position = code.find(
+                marker
             )
 
-        if "```" in code:
+            if position >= 0:
 
-            code = code.replace(
-                "```",
-                ""
+                positions.append(
+                    position
+                )
+
+        if positions:
+
+            code = code[
+                min(positions):
+            ]
+
+        # ==================================================
+        # REMOVE TEXT AFTER browser.close()
+        #
+        # This fixes the exact error from your run.
+        # ==================================================
+
+        browser_close_positions = [
+
+            code.find(
+                "browser.close()"
+            ),
+
+            code.find(
+                "browser.close ()"
             )
+        ]
+
+        browser_close_positions = [
+            position
+            for position in browser_close_positions
+            if position >= 0
+        ]
+
+        if browser_close_positions:
+
+            end_position = (
+                min(
+                    browser_close_positions
+                )
+                + len(
+                    "browser.close()"
+                )
+            )
+
+            code = code[
+                :end_position
+            ]
+
+        # ==================================================
+        # FIX COMMON QWEN LOCATOR ERRORS
+        # ==================================================
+
+        # --------------------------------------------------
+        # WRONG:
+        #
+        # page.fill(
+        #     'page.get_by_placeholder("Username")',
+        #     "ADMIN"
+        # )
+        #
+        # CORRECT:
+        #
+        # page.get_by_placeholder("Username").fill("Admin")
+        # --------------------------------------------------
+
+        pattern = (
+            r'''page\.fill\(\s*'''
+            r'''['"]page\.get_by_placeholder\("'''
+            r'''([^"]+)'''
+            r'''"\)['"]\s*,\s*'''
+            r'''(["'].*?["'])'''
+            r'''\s*\)'''
+        )
+
+        code = re.sub(
+            pattern,
+            r'page.get_by_placeholder("\1").fill(\2)',
+            code
+        )
+
+        # ==================================================
+        # FIX SINGLE-LINE LOCATOR FILL
+        # ==================================================
+
+        pattern = (
+            r'''page\.fill\(\s*'''
+            r'''['"]page\.get_by_placeholder\('''
+            r'''["']([^"']+)["']'''
+            r'''\)['"]\s*,\s*'''
+            r'''(["'].*?["'])'''
+            r'''\s*\)'''
+        )
+
+        code = re.sub(
+            pattern,
+            r'page.get_by_placeholder("\1").fill(\2)',
+            code
+        )
+
+        # ==================================================
+        # FIX WRONG LOGIN CLICK
+        # ==================================================
+
+        pattern = (
+            r'''page\.click\(\s*'''
+            r'''['"]page\.get_by_role\("button",'''
+            r'''\s*name="([^"]+)"\)['"]'''
+            r'''\s*\)'''
+        )
+
+        code = re.sub(
+            pattern,
+            r'page.get_by_role("button", name="\1").click()',
+            code
+        )
+
+        # ==================================================
+        # FIX SINGLE-QUOTE ROLE LOCATOR
+        # ==================================================
+
+        pattern = (
+            r'''page\.click\(\s*'''
+            r'''["']page\.get_by_role\('button','''
+            r'''\s*name=['"]([^'"]+)['"]'''
+            r'''\)['"]\s*\)'''
+        )
+
+        code = re.sub(
+            pattern,
+            r'page.get_by_role("button", name="\1").click()',
+            code
+        )
+
+        # ==================================================
+        # REMOVE OBVIOUS NON-PYTHON LINES
+        # ==================================================
+
+        lines = code.splitlines()
+
+        cleaned_lines = []
+
+        for line in lines:
+
+            stripped = line.strip()
+
+            # Ignore common Qwen explanations
+            if stripped.startswith(
+                "**Key points"
+            ):
+
+                break
+
+            if stripped.startswith(
+                "### Key points"
+            ):
+
+                break
+
+            if stripped.startswith(
+                "Key points:"
+            ):
+
+                break
+
+            if stripped.startswith(
+                "This script"
+            ):
+
+                break
+
+            if stripped.startswith(
+                "This code"
+            ):
+
+                break
+
+            cleaned_lines.append(
+                line
+            )
+
+        code = "\n".join(
+            cleaned_lines
+        )
 
         return code.strip()

@@ -1,23 +1,35 @@
 from app.agent import TestingAgent
 
 
-def print_separator(char="=", length=60):
-    print(char * length)
+def print_separator(
+    char="=",
+    length=60
+):
+
+    print(
+        char * length
+    )
 
 
-def print_discovered_elements(elements):
-    """
-    Display all elements discovered by Playwright.
-    """
+def print_discovered_elements(
+    elements
+):
 
     print("\n")
     print_separator()
-    print("DISCOVERED WEB ELEMENTS")
+
+    print(
+        "DISCOVERED WEB ELEMENTS"
+    )
+
     print_separator()
 
     if not elements:
 
-        print("No elements discovered.")
+        print(
+            "No elements discovered."
+        )
+
         return
 
     print(
@@ -30,7 +42,9 @@ def print_discovered_elements(elements):
         start=1
     ):
 
-        print("\n" + "-" * 60)
+        print(
+            "\n" + "-" * 60
+        )
 
         print(
             f"Element #{index}"
@@ -41,11 +55,6 @@ def print_discovered_elements(elements):
         print(
             f"Tag           : "
             f"{element.get('tag')}"
-        )
-
-        print(
-            f"Index         : "
-            f"{element.get('index')}"
         )
 
         print(
@@ -89,16 +98,6 @@ def print_discovered_elements(elements):
         )
 
         print(
-            f"Title         : "
-            f"{element.get('title')}"
-        )
-
-        print(
-            f"Value         : "
-            f"{element.get('value')}"
-        )
-
-        print(
             f"Visible       : "
             f"{element.get('visible')}"
         )
@@ -106,11 +105,6 @@ def print_discovered_elements(elements):
         print(
             f"Enabled       : "
             f"{element.get('enabled')}"
-        )
-
-        print(
-            f"Checked       : "
-            f"{element.get('checked')}"
         )
 
         print(
@@ -128,59 +122,18 @@ def print_discovered_elements(elements):
             f"{element.get('playwright_locator')}"
         )
 
-        # --------------------------------------------------
-        # OPTIONS FOR SELECT
-        # --------------------------------------------------
 
-        options = element.get(
-            "options"
-        )
-
-        if options:
-
-            print(
-                "\nSelect Options:"
-            )
-
-            for option in options:
-
-                print(
-                    f"   Text  : "
-                    f"{option.get('text')}"
-                )
-
-                print(
-                    f"   Value : "
-                    f"{option.get('value')}"
-                )
-
-        # --------------------------------------------------
-        # OUTER HTML
-        # --------------------------------------------------
-
-        outer_html = element.get(
-            "outer_html"
-        )
-
-        if outer_html:
-
-            print(
-                "\nOuter HTML:"
-            )
-
-            print(
-                outer_html
-            )
-
-
-def print_test_cases(test_cases):
-    """
-    Display generated test cases.
-    """
+def print_test_cases(
+    test_cases
+):
 
     print("\n")
     print_separator()
-    print("GENERATED TEST CASES")
+
+    print(
+        "GENERATED TEST CASES"
+    )
+
     print_separator()
 
     if not test_cases:
@@ -191,17 +144,22 @@ def print_test_cases(test_cases):
 
         return
 
-    print(test_cases)
+    print(
+        test_cases
+    )
 
 
-def print_playwright_code(code):
-    """
-    Display generated Playwright code.
-    """
+def print_playwright_code(
+    code
+):
 
     print("\n")
     print_separator()
-    print("GENERATED PLAYWRIGHT SCRIPT")
+
+    print(
+        "GENERATED PLAYWRIGHT SCRIPT"
+    )
+
     print_separator()
 
     if not code:
@@ -212,75 +170,105 @@ def print_playwright_code(code):
 
         return
 
-    print(code)
+    print(
+        code
+    )
 
 
-def print_validation(validation):
-    """
-    Display Playwright validation result.
-    """
+def print_execution_result(
+    execution
+):
 
     print("\n")
     print_separator()
-    print("PLAYWRIGHT VALIDATION")
+
+    print(
+        "AUTOMATION EXECUTION RESULT"
+    )
+
     print_separator()
 
-    if not validation:
+    if not execution:
 
         print(
-            "Validation information unavailable."
+            "No execution information."
         )
 
         return
 
-    valid = validation.get(
-        "valid",
-        False
+    print(
+        f"Status       : "
+        f"{execution.get('status')}"
     )
 
-    if valid:
+    print(
+        f"Return Code  : "
+        f"{execution.get('return_code')}"
+    )
+
+    if execution.get(
+        "script_path"
+    ):
 
         print(
-            "\nSTATUS: PASSED"
+            f"Script       : "
+            f"{execution.get('script_path')}"
         )
+
+    # --------------------------------------------------
+    # Standard output
+    # --------------------------------------------------
+
+    stdout = execution.get(
+        "stdout"
+    )
+
+    if stdout:
+
+        print("\n")
+        print(
+            "PLAYWRIGHT OUTPUT"
+        )
+
+        print("-" * 60)
 
         print(
-            "Generated Playwright code "
-            "passed validation."
+            stdout
         )
 
-    else:
+    # --------------------------------------------------
+    # Error output
+    # --------------------------------------------------
+
+    stderr = execution.get(
+        "stderr"
+    )
+
+    if stderr:
+
+        print("\n")
+        print(
+            "PLAYWRIGHT ERROR"
+        )
+
+        print("-" * 60)
 
         print(
-            "\nSTATUS: FAILED"
+            stderr
         )
 
-        errors = validation.get(
-            "errors",
-            []
-        )
 
-        if errors:
-
-            print(
-                "\nValidation Errors:"
-            )
-
-            for error in errors:
-
-                print(
-                    f"  - {error}"
-                )
-
-
-def print_page_information(response):
-    """
-    Display basic page information.
-    """
+def print_page_information(
+    response
+):
 
     print("\n")
     print_separator()
-    print("PAGE INFORMATION")
+
+    print(
+        "PAGE INFORMATION"
+    )
+
     print_separator()
 
     print(
@@ -339,17 +327,17 @@ def main():
 
             break
 
-        # --------------------------------------------------
-        # Empty input
-        # --------------------------------------------------
+        # ==================================================
+        # EMPTY INPUT
+        # ==================================================
 
         if not prompt.strip():
 
             continue
 
-        # --------------------------------------------------
-        # Exit
-        # --------------------------------------------------
+        # ==================================================
+        # EXIT
+        # ==================================================
 
         if prompt.strip().lower() in [
             "exit",
@@ -362,9 +350,9 @@ def main():
 
             break
 
-        # --------------------------------------------------
-        # Execute Agent
-        # --------------------------------------------------
+        # ==================================================
+        # EXECUTE AGENT
+        # ==================================================
 
         try:
 
@@ -382,7 +370,7 @@ def main():
             print_separator()
 
             # ==================================================
-            # BROWSER TESTING RESPONSE
+            # BROWSER TEST RESPONSE
             # ==================================================
 
             if isinstance(
@@ -390,9 +378,9 @@ def main():
                 dict
             ):
 
-                # ----------------------------------------------
-                # Error
-                # ----------------------------------------------
+                # --------------------------------------------------
+                # ERROR
+                # --------------------------------------------------
 
                 if response.get(
                     "error"
@@ -410,17 +398,17 @@ def main():
 
                     continue
 
-                # ----------------------------------------------
-                # Page Information
-                # ----------------------------------------------
+                # --------------------------------------------------
+                # PAGE
+                # --------------------------------------------------
 
                 print_page_information(
                     response
                 )
 
-                # ----------------------------------------------
-                # Discovered Elements
-                # ----------------------------------------------
+                # --------------------------------------------------
+                # ELEMENTS
+                # --------------------------------------------------
 
                 print_discovered_elements(
                     response.get(
@@ -429,9 +417,9 @@ def main():
                     )
                 )
 
-                # ----------------------------------------------
-                # Test Cases
-                # ----------------------------------------------
+                # --------------------------------------------------
+                # TEST CASES
+                # --------------------------------------------------
 
                 print_test_cases(
                     response.get(
@@ -440,9 +428,9 @@ def main():
                     )
                 )
 
-                # ----------------------------------------------
-                # Playwright Code
-                # ----------------------------------------------
+                # --------------------------------------------------
+                # PLAYWRIGHT
+                # --------------------------------------------------
 
                 print_playwright_code(
                     response.get(
@@ -451,13 +439,33 @@ def main():
                     )
                 )
 
-                # ----------------------------------------------
-                # Validation
-                # ----------------------------------------------
+                # --------------------------------------------------
+                # EXECUTION
+                # --------------------------------------------------
 
-                print_validation(
+                print_execution_result(
                     response.get(
-                        "validation"
+                        "execution",
+                        {}
+                    )
+                )
+
+                # --------------------------------------------------
+                # SNAPSHOT
+                # --------------------------------------------------
+
+                print("\n")
+                print_separator()
+
+                print(
+                    "PAGE SNAPSHOT"
+                )
+
+                print_separator()
+
+                print(
+                    response.get(
+                        "snapshot"
                     )
                 )
 

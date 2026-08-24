@@ -1,74 +1,203 @@
+import os
 import subprocess
 import sys
 import tempfile
-import os
+from datetime import datetime
 
 
 class PlaywrightExecutor:
 
-    def execute(self, code):
+    def __init__(
+        self,
+        timeout=120
+    ):
 
-        temp_file = None
+        self.timeout = timeout
+
+    # ======================================================
+    # EXECUTE GENERATED PLAYWRIGHT CODE
+    # ======================================================
+
+    def execute(
+        self,
+        code
+    ):
+
+        if not code:
+
+            return {
+                "success": False,
+                "status": "FAILED",
+                "stdout": "",
+                "stderr": "Generated Playwright code is empty.",
+                "return_code": -1
+            }
+
+        # --------------------------------------------------
+        # Clean markdown
+        # --------------------------------------------------
+
+        code = self.clean_code(
+            code
+        )
+
+        # --------------------------------------------------
+        # Create temporary Python file
+        # --------------------------------------------------
+
+        timestamp = datetime.now().strftime(
+            "%Y%m%d_%H%M%S"
+        )
+
+        filename = (
+            f"generated_test_{timestamp}.py"
+        )
+
+        temp_dir = os.path.join(
+            "data",
+            "generated_scripts"
+        )
+
+        os.makedirs(
+            temp_dir,
+            exist_ok=True
+        )
+
+        script_path = os.path.join(
+            temp_dir,
+            filename
+        )
+
+        # --------------------------------------------------
+        # Save generated script
+        # --------------------------------------------------
+
+        with open(
+            script_path,
+            "w",
+            encoding="utf-8"
+        ) as file:
+
+            file.write(
+                code
+            )
+
+        print(
+            "\nGenerated script saved:"
+        )
+
+        print(
+            script_path
+        )
+
+        # --------------------------------------------------
+        # Execute Python script
+        # --------------------------------------------------
+
+        print(
+            "\nStarting Playwright automation..."
+        )
+
+        print(
+            "-" * 60
+        )
 
         try:
-
-            with tempfile.NamedTemporaryFile(
-                mode="w",
-                suffix=".py",
-                delete=False,
-                encoding="utf-8"
-            ) as file:
-
-                file.write(code)
-                temp_file = file.name
-
-            print("\nExecuting Playwright script...")
-            print("-" * 60)
 
             process = subprocess.run(
                 [
                     sys.executable,
-                    temp_file
+                    script_path
                 ],
                 capture_output=True,
                 text=True,
-                timeout=300
+                timeout=self.timeout
             )
 
-            result = {
-                "return_code": process.returncode,
-                "stdout": process.stdout,
-                "stderr": process.stderr,
-                "status": (
-                    "PASSED"
-                    if process.returncode == 0
-                    else "FAILED"
-                )
-            }
+            stdout = process.stdout
+            stderr = process.stderr
 
-            return result
+            # --------------------------------------------------
+            # SUCCESS
+            # --------------------------------------------------
 
-        except subprocess.TimeoutExpired:
+            if process.returncode == 0:
+
+                return {
+                    "success": True,
+                    "status": "PASSED",
+                    "stdout": stdout,
+                    "stderr": stderr,
+                    "return_code": process.returncode,
+                    "script_path": script_path
+                }
+
+            # --------------------------------------------------
+            # FAILURE
+            # --------------------------------------------------
 
             return {
+                "success": False,
+                "status": "FAILED",
+                "stdout": stdout,
+                "stderr": stderr,
+                "return_code": process.returncode,
+                "script_path": script_path
+            }
+
+        except subprocess.TimeoutExpired as e:
+
+            return {
+                "success": False,
                 "status": "TIMEOUT",
-                "stdout": "",
-                "stderr": "Playwright execution timed out."
+                "stdout": (
+                    e.stdout
+                    if e.stdout
+                    else ""
+                ),
+                "stderr": (
+                    e.stderr
+                    if e.stderr
+                    else ""
+                ),
+                "return_code": -1,
+                "script_path": script_path
             }
 
         except Exception as e:
 
             return {
-                "status": "ERROR",
+                "success": False,
+                "status": "FAILED",
                 "stdout": "",
-                "stderr": str(e)
+                "stderr": str(e),
+                "return_code": -1,
+                "script_path": script_path
             }
 
-        finally:
+    # ======================================================
+    # CLEAN GENERATED CODE
+    # ======================================================
 
-            if temp_file and os.path.exists(temp_file):
+    def clean_code(
+        self,
+        code
+    ):
 
-                try:
-                    os.remove(temp_file)
-                except Exception:
-                    pass
+        code = code.strip()
+
+        if "```python" in code:
+
+            code = code.replace(
+                "```python",
+                ""
+            )
+
+        if "```" in code:
+
+            code = code.replace(
+                "```",
+                ""
+            )
+
+        return code.strip()

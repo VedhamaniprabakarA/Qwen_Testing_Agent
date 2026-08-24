@@ -79,17 +79,17 @@
             "aria_label": null,
             "role": "link",
             "class": "x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x1ypdohk x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1fmog5m xu25z0z x140muxe xo1y3bh x87ps6o x1lku1pv x1a2a7pz x9f619 x3nfvp2 xdt5ytf xl56j7k x1n2onr6 xh8yej3",
-            "href": "/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzg3NDk3OTM3fQ%3D%3D&ars=facebook_login",
+            "href": "/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzg3NDk5MTM5fQ%3D%3D&ars=facebook_login",
             "title": null,
             "value": null,
             "text": "Forgotten password?",
             "visible": true,
             "enabled": true,
             "checked": false,
-            "css_selector": "a[href=\"/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzg3NDk3OTM3fQ%3D%3D&ars=facebook_login\"]",
-            "xpath": "//a[@href=\"/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzg3NDk3OTM3fQ%3D%3D&ars=facebook_login\"]",
+            "css_selector": "a[href=\"/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzg3NDk5MTM5fQ%3D%3D&ars=facebook_login\"]",
+            "xpath": "//a[@href=\"/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzg3NDk5MTM5fQ%3D%3D&ars=facebook_login\"]",
             "playwright_locator": "page.get_by_role(\"link\", name=\"Forgotten password?\")",
-            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x1ypdohk x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1fmog5m xu25z0z x140muxe xo1y3bh x87ps6o x1lku1pv x1a2a7pz x9f619 x3nfvp2 xdt5ytf xl56j7k x1n2onr6 xh8yej3\" href=\"/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzg3NDk3OTM3fQ%3D%3D&amp;ars=facebook_login\" role=\"link\" tabindex=\"0\"><div role=\"none\" class=\"x1ja2u2z x78zum5 x2lah0s x1n2onr6 xl56j7k x6s0dn4 xozqiw3 x1q0g3np x972fbf x10w94by x1qhh985 x14e42zd x9f619 xjbqb8w xqbgfmv xbe3n85 x7a1id4 x1d9i5bo x1xila8y x1bumbmr xc8cyl1\"><div class=\"html-div xdj266r xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x6s0dn4 x78zum5 xl56j7k x1e0frkt xf0ucvx xx2axb6\"><div role=\"none\" class=\"x9f619 x1n2onr6 x1ja2u2z x193iq5w xeuugli x6s0dn4 x78zum5 x2lah0s x10ksdce x16k4gxc\"><span class=\"x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1sfkdl8 xurcqga x3vd66c xhqx0jl xzsf02u x1yc453h xudqn12 x3x7a5m\" style=\"--x---base-line-clamp-line-height:calc(var(--primary-label-line-height) * 1em);--x-lineHeight:calc(var(--primary-label-line-height) * 1em)\"><span class=\"x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft\">Forgotten password?</span></span></div></div><div class=\"x1ey2m1c xtijo5x x1o0tod xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h x1fmog5m xu25z0z x140muxe xo1y3bh\" role=\"none\" data-visualcompletion=\"ignore\"></div></div></a>"
+            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x1ypdohk x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1fmog5m xu25z0z x140muxe xo1y3bh x87ps6o x1lku1pv x1a2a7pz x9f619 x3nfvp2 xdt5ytf xl56j7k x1n2onr6 xh8yej3\" href=\"/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzg3NDk5MTM5fQ%3D%3D&amp;ars=facebook_login\" role=\"link\" tabindex=\"0\"><div role=\"none\" class=\"x1ja2u2z x78zum5 x2lah0s x1n2onr6 xl56j7k x6s0dn4 xozqiw3 x1q0g3np x972fbf x10w94by x1qhh985 x14e42zd x9f619 xjbqb8w xqbgfmv xbe3n85 x7a1id4 x1d9i5bo x1xila8y x1bumbmr xc8cyl1\"><div class=\"html-div xdj266r xat24cr xexx8yu xyri2b x18d9i69 x1c1uobl x6s0dn4 x78zum5 xl56j7k x1e0frkt xf0ucvx xx2axb6\"><div role=\"none\" class=\"x9f619 x1n2onr6 x1ja2u2z x193iq5w xeuugli x6s0dn4 x78zum5 x2lah0s x10ksdce x16k4gxc\"><span class=\"x1lliihq x1plvlek xryxfnj x1n2onr6 xyejjpt x15dsfln x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1sfkdl8 xurcqga x3vd66c xhqx0jl xzsf02u x1yc453h xudqn12 x3x7a5m\" style=\"--x---base-line-clamp-line-height:calc(var(--primary-label-line-height) * 1em);--x-lineHeight:calc(var(--primary-label-line-height) * 1em)\"><span class=\"x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft\">Forgotten password?</span></span></div></div><div class=\"x1ey2m1c xtijo5x x1o0tod xg01cxk x47corl x10l6tqk x13vifvy x1ebt8du x19991ni x1dhq9h x1fmog5m xu25z0z x140muxe xo1y3bh\" role=\"none\" data-visualcompletion=\"ignore\"></div></div></a>"
         },
         {
             "index": 2,
@@ -321,17 +321,17 @@
             "aria_label": null,
             "role": "link",
             "class": "x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm",
-            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fmessenger.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fmessenger.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ",
             "title": null,
             "value": null,
             "text": "Messenger",
             "visible": true,
             "enabled": true,
             "checked": false,
-            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fmessenger.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
-            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fmessenger.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
+            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fmessenger.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
+            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fmessenger.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
             "playwright_locator": "page.get_by_role(\"link\", name=\"Messenger\")",
-            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fmessenger.com%2F&amp;h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\" rel=\"nofollow\" role=\"link\" tabindex=\"0\" target=\"_self\">Messenger</a>"
+            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fmessenger.com%2F&amp;h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\" rel=\"nofollow\" role=\"link\" tabindex=\"0\" target=\"_self\">Messenger</a>"
         },
         {
             "index": 13,
@@ -387,17 +387,17 @@
             "aria_label": null,
             "role": "link",
             "class": "x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm",
-            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ",
             "title": null,
             "value": null,
             "text": "Meta Pay",
             "visible": true,
             "enabled": true,
             "checked": false,
-            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
-            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
+            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
+            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
             "playwright_locator": "page.get_by_role(\"link\", name=\"Meta Pay\")",
-            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay&amp;h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\" rel=\"nofollow noreferrer\" role=\"link\" tabindex=\"0\" target=\"_blank\">Meta Pay</a>"
+            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay&amp;h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\" rel=\"nofollow noreferrer\" role=\"link\" tabindex=\"0\" target=\"_blank\">Meta Pay</a>"
         },
         {
             "index": 16,
@@ -409,17 +409,17 @@
             "aria_label": null,
             "role": "link",
             "class": "x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm",
-            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ",
             "title": null,
             "value": null,
             "text": "Meta Store",
             "visible": true,
             "enabled": true,
             "checked": false,
-            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
-            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
+            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
+            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
             "playwright_locator": "page.get_by_role(\"link\", name=\"Meta Store\")",
-            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2F&amp;h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\" rel=\"nofollow noreferrer\" role=\"link\" tabindex=\"0\" target=\"_blank\">Meta Store</a>"
+            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2F&amp;h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\" rel=\"nofollow noreferrer\" role=\"link\" tabindex=\"0\" target=\"_blank\">Meta Store</a>"
         },
         {
             "index": 17,
@@ -431,17 +431,17 @@
             "aria_label": null,
             "role": "link",
             "class": "x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm",
-            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fquest%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fquest%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ",
             "title": null,
             "value": null,
             "text": "Meta Quest",
             "visible": true,
             "enabled": true,
             "checked": false,
-            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fquest%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
-            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fquest%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
+            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fquest%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
+            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fquest%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
             "playwright_locator": "page.get_by_role(\"link\", name=\"Meta Quest\")",
-            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fquest%2F&amp;h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\" rel=\"nofollow noreferrer\" role=\"link\" tabindex=\"0\" target=\"_blank\">Meta Quest</a>"
+            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fquest%2F&amp;h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\" rel=\"nofollow noreferrer\" role=\"link\" tabindex=\"0\" target=\"_blank\">Meta Quest</a>"
         },
         {
             "index": 18,
@@ -453,17 +453,17 @@
             "aria_label": null,
             "role": "link",
             "class": "x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm",
-            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fai-glasses%2Fray-ban-meta%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fai-glasses%2Fray-ban-meta%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ",
             "title": null,
             "value": null,
             "text": "Ray-Ban Meta",
             "visible": true,
             "enabled": true,
             "checked": false,
-            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fai-glasses%2Fray-ban-meta%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
-            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fai-glasses%2Fray-ban-meta%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
+            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fai-glasses%2Fray-ban-meta%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
+            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fai-glasses%2Fray-ban-meta%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
             "playwright_locator": "page.get_by_role(\"link\", name=\"Ray-Ban Meta\")",
-            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fai-glasses%2Fray-ban-meta%2F&amp;h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\" rel=\"nofollow noreferrer\" role=\"link\" tabindex=\"0\" target=\"_blank\">Ray-Ban Meta</a>"
+            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fai-glasses%2Fray-ban-meta%2F&amp;h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\" rel=\"nofollow noreferrer\" role=\"link\" tabindex=\"0\" target=\"_blank\">Ray-Ban Meta</a>"
         },
         {
             "index": 19,
@@ -475,17 +475,17 @@
             "aria_label": null,
             "role": "link",
             "class": "x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm",
-            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ",
             "title": null,
             "value": null,
             "text": "Meta AI",
             "visible": true,
             "enabled": true,
             "checked": false,
-            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
-            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
+            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
+            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
             "playwright_locator": "page.get_by_role(\"link\", name=\"Meta AI\")",
-            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2F&amp;h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\" rel=\"nofollow\" role=\"link\" tabindex=\"0\" target=\"_self\">Meta AI</a>"
+            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2F&amp;h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\" rel=\"nofollow\" role=\"link\" tabindex=\"0\" target=\"_self\">Meta AI</a>"
         },
         {
             "index": 20,
@@ -497,17 +497,17 @@
             "aria_label": null,
             "role": "link",
             "class": "x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm",
-            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ",
             "title": null,
             "value": null,
             "text": "Instagram",
             "visible": true,
             "enabled": true,
             "checked": false,
-            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
-            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
+            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
+            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
             "playwright_locator": "page.get_by_role(\"link\", name=\"Instagram\")",
-            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\" rel=\"nofollow\" role=\"link\" tabindex=\"0\" target=\"_self\">Instagram</a>"
+            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\" rel=\"nofollow\" role=\"link\" tabindex=\"0\" target=\"_self\">Instagram</a>"
         },
         {
             "index": 21,
@@ -519,17 +519,17 @@
             "aria_label": null,
             "role": "link",
             "class": "x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm",
-            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q",
+            "href": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ",
             "title": null,
             "value": null,
             "text": "Threads",
             "visible": true,
             "enabled": true,
             "checked": false,
-            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
-            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.com%2F&h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\"]",
+            "css_selector": "a[href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
+            "xpath": "//a[@href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.com%2F&h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\"]",
             "playwright_locator": "page.get_by_role(\"link\", name=\"Threads\")",
-            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.com%2F&amp;h=AUBTAebOTF5F2T5XN2Bw_4SfhMSpGWG95SW_Qlyg_CJ0Sc53kETSyJdEonNAiGT7Qs4bIG1z7Hmr_njr_fuHXIsrR5GF3LM_-rD72Dh8k3U7DkfLWkmLGKhL61tau5oL4AB0WeG1wCVGwKKb3TFv7Q\" rel=\"nofollow\" role=\"link\" tabindex=\"0\" target=\"_self\">Threads</a>"
+            "outer_html": "<a class=\"x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 xggy1nq x1a2a7pz x1lku1pv xi81zsa xo1l8bm\" href=\"https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.com%2F&amp;h=AUD9USP4Y9VL10zIHGkkF7Y9ln9JovrEp--9brxiDKUVhd1BY3B99c5Ea4oNgWkeKOgw7dZk1_ppL7AiOXosyvd83oVb0dN7T24vIeE0DfKYlRCO9e8Dg4-WK4RN-6ceScu-KlckE0lJWNVQNdL_oQ\" rel=\"nofollow\" role=\"link\" tabindex=\"0\" target=\"_self\">Threads</a>"
         },
         {
             "index": 22,
@@ -805,5 +805,5 @@
         }
     ],
     "error": null,
-    "stored_at": "2026-08-23T20:42:26.806234"
+    "stored_at": "2026-08-23T21:02:26.201500"
 }
